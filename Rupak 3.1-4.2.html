@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2 id= "External Interface Requirements">3.External Interface Requirements</h2>
+    <h3 id= "User Interfaces">3.1 User Interfaces </h3>
+    <p>A user that opens the app first time should see the sign-up page with an option “I already have an account” which takes him to the login page.</p>
+    <p>If user is not first-time, he/she should be able to see home page, on which there will be two tabs. A first one is profile tab, which opens by default, where he/she can change/upload profile picture, edit his/her e-mail, phone number and password. Also users can set preferred language in their profile. There will be also a chat option where user can chat to matches on 'Tonatuni' app. This tab also shows likes/loves a user has received and some other details.</p>
+    <p>A second/right tab will be a search tab where user can search for dates. It includes a text bar where user can enter keywords for search and filter for search that allows user to select gender of dates to be searched. It also allows user to set preferred range of age (for example 18-22) for people to be searched. See figure for the interface for filter the mobile app (Web app filter will be similar).</p>
+
+    <h3 id = "Hardware Interfaces">3.2 Hardware Interfaces</h3>
+    <p>The mobile and web application, both do not have any specific/designated hardware, therefore it does not have any direct hardware interfaces.</p>
+    <h3 id= "Software Interfaces">3.3 Software Interfaces</h3>
+    <p>The mobile application uses camera application to capture photos for the profile picture and gallery/file manager application to upload pictures of user. This communication involves both reading and modification of data.</p>
+    <p>It also uses default keyboard of android phone to type login/signup information and search terms and some other fields as well. This communication requires “Allow access keyboard” permission from the admin/user.</p>
+
+    <h3 id= "Communications Interfaces">3.4 Communications Interfaces</h3>
+    <p>The different parts of the systems communicate with each other in different ways and they depend on each other. However the way in which these components communicate is not important for the system (specifically not in this document). So these communications are handled by OS of both android and web app.</p>
+
+    <h2 id="System Features">4. System Features</h2>
+    <h3 id="Download Mobile Application">4.1	Download Mobile Application </h3>
+    <h4>4.1.1 Description and Priority</h4>
+    <p>A user will download mobile application from application store or from the link provided in website/web app. The priority of this requirement is very high.</p>
+    <h4>4.1.2 Stimulus/Response Sequences</h4>
+    <p>The user will open corresponding mobile application store to download the application.</p>
+
+    <h3 id="User Registration">4.2	User Registration</h3>
+    <h4>4.2.1 Description and Priority</h4>
+    <p>This feature allows user to create new account on 'Tonatuni' app. This feature is of high priority and importance because user cannot proceed in app without registration.</p>
+
+    <h4>4.2.2 Stimulus/Response Sequences</h4>
+    <p>When user opens the app, a screen is showed where he/she is asked to enter name, age and gender. After that user will press next button. Then next screen appears where user is asked to choose username and password. The system will determine whether the username is already chosen or not, and also check whether password is 8 digit long or not. If these conditions are satisfied, the user will be show a confirmation message indicating that Registration is successful.</p>
+    <h4>4.2.3 Functional Requirements</h4>
+
+    <p><ul>
+      <li>REQ-1:	Add the information of user to the database.</li>
+      <li>REQ-2:	Look in the data, to check whether the chosen username is already taken or not.
+
+    </li>
+    </ul>
+    </p>
+
+  </body>
+</html>
